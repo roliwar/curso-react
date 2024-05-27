@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import ButtonCircle from '../buttons/ButtonCircle/ButtonCircle';
 import InputDisplay from '../inputs/InputDisplay/InputDisplay';
-/*import '../../App.css'*/
 
 const Calculator = () => {
 const [operador, setOperador] = useState('');
@@ -97,10 +96,6 @@ const [operador, setOperador] = useState('');
       }
     }
     else if(value == 'C'){
-      /*setOperando1('')
-      setOperando2('')
-      setOperador('')
-      setDisplay('')*/
       limpiar();
     }
   }

@@ -58,13 +58,11 @@
   width: 300px;
   box-shadow:  3px 3px 3px  rgba(40, 39, 39, 0.25);
 }
-
+/* 
 .tarea-box {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 5px;
-  /*width: 300px;*/
-  /*box-shadow:  3px 3px 3px  rgba(40, 39, 39, 0.25);*/
   margin: 3px;
   position: relative;
 }
@@ -72,7 +70,7 @@
 .tarea-parrafo{
   padding: 0px 25px 0px 0px;
   margin: 0px;
-}
+} */
 
 .boton-agregar {
   /*border-radius: 40%;*/
@@ -93,7 +91,7 @@
 .boton-agregar:hover {
   transition:  all .1s ease-in-out;
   background-color: #0c5596 !important;
-}
+}/* 
 
 .boton-eliminar {
   position: absolute;
@@ -107,7 +105,7 @@
 
 .boton-eliminar:hover {
   color: darkred;
-}
+} */
 
 .input-tarea{
   border-radius: 5px;

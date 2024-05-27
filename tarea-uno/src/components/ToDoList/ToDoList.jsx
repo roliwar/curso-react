@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Todo from '../Todo/Todo';
 
 const ToDoList = () => {
   const [tareas, setTareas] = useState([]);
@@ -33,7 +34,7 @@ const ToDoList = () => {
     setTareas(tmpTareas);
   };
 
-  const handleToggleComplete = (index) => {
+  const handleEstadoRealizada = (index) => {
     const tmpTareas = [...tareas];
     tmpTareas[index].realizada = !tmpTareas[index].realizada;
     setTareas(tmpTareas);
@@ -49,16 +50,7 @@ const ToDoList = () => {
       <br />
       
         {tareas.map((tarea, index) => (
-          <div key={index} className='tarea-box'>
-            <p key={index} style={{ textDecoration: tarea.realizada ? 'line-through' : 'none' }} className='tarea-parrafo'>
-              <span onClick={() => handleToggleComplete(index)}>
-                {tarea.descripcion}
-              </span>
-              <span className="boton-eliminar" onClick={() => handleEliminar(index)}>
-              &#10006;
-              </span>
-            </p>
-          </div>
+            <Todo key={index} tarea={tarea} index={index} onClickRealizada={handleEstadoRealizada} onClickEliminar={handleEliminar}/>
         ))}
     </div>
   );
