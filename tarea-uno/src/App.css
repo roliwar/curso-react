@@ -1,0 +1,119 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.calculator-container {
+  border-radius:10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px 20px;
+  width: 300px;
+  box-shadow:  3px 3px 3px  rgba(40, 39, 39, 0.25);
+}
+
+.todolist-container {
+  text-align: left;
+  border-radius:10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px 20px;
+  width: 300px;
+  box-shadow:  3px 3px 3px  rgba(40, 39, 39, 0.25);
+}
+
+.tarea-box {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  /*width: 300px;*/
+  /*box-shadow:  3px 3px 3px  rgba(40, 39, 39, 0.25);*/
+  margin: 3px;
+  position: relative;
+}
+
+.tarea-parrafo{
+  padding: 0px 25px 0px 0px;
+  margin: 0px;
+}
+
+.boton-agregar {
+  /*border-radius: 40%;*/
+  border-radius:5px;
+  border: 0px solid transparent;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  /*background-color: #1a1a1a;*/
+  cursor: pointer;
+  box-shadow: 3px 3px 3px  rgba(40, 39, 39, 0.25);
+  transition:  all .1s ease-in-out;
+  background-color: #1468b2 !important;
+  color: white;
+}
+
+.boton-agregar:hover {
+  transition:  all .1s ease-in-out;
+  background-color: #0c5596 !important;
+}
+
+.boton-eliminar {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  color: darkred;
+}
+
+.input-tarea{
+  border-radius: 5px;
+  border: 1px solid #8895b1;
+  padding: 0px 5px 0px 10px;
+  height: 30px;
+  margin-right: 5px;
+
+}

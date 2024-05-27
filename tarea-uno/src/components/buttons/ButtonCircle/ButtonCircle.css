@@ -1,0 +1,58 @@
+
+.button-circle {
+    /*border-radius: 40%;*/
+    border-radius:30px;
+    border: 0px solid transparent;
+    padding: 5px 10px;
+    min-height: 60px;
+    min-width: 60px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: inherit;
+    /*background-color: #1a1a1a;*/
+    cursor: pointer;
+    transition:  all .1s ease-in-out;
+    margin-bottom: 3px;
+
+    box-shadow: -3px -2px 0px  rgba(0, 0, 0, 0.3) inset,  3px 3px 3px  rgba(40, 39, 39, 0.25);
+  }
+
+  .clear{
+    width: 100%;
+  }
+  
+  .button-circle:hover {
+    background-color: #d2d5dc;
+    transition: border-color 0.25s;
+  }
+  
+  .button-circle:active {
+    /*box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.3) inset;*/
+    box-shadow: 0px 0px 0px  rgba(0, 0, 0, 0) inset;
+    /*transition: border-color 0.25s;*/
+    transition:  all .1s ease-in-out;
+    /*font-size: 1.8em;*/
+    /*min-height: 55px;
+    min-width: 55px;*/
+    padding-top: 7px;
+    padding-left: 12px;
+    margin-top: 2px;
+    margin-right: -2px;
+    min-height: 58px;
+    min-width: 58px;
+  }
+  
+  .operator{
+    background-color: #576571 !important;
+    color: white;
+  }
+  
+  .tool{
+    background-color: #90a6b9 !important;
+    color: white;
+  }
+  
+  .equal{
+    background-color: #1468b2 !important;
+    color: white;
+  }
