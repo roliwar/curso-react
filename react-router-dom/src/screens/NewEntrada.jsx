@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useNavigate } from "react-router-dom";
 
 const NewEntrada = (props) => {
+    const { StateContext } = props
+    const { entradas, setEntradas } = useContext(StateContext);
     const [id, setId] = useState(0);
     const [titulo, setTitulo] = useState('');
     const [contenido, setContenido] = useState('');
@@ -15,12 +17,13 @@ const NewEntrada = (props) => {
         setContenido(event.target.value)
     }
 
-    const onClickGuardar = (event) => { 
-        let entradas = JSON.parse(localStorage.getItem('dataEntradas'))
+    const onClickGuardar = (event) => {
         const fechaActual = obtenerFechaActual()
         
         let id = obtenerSigId(entradas)
         localStorage.setItem('dataEntradas', JSON.stringify([...entradas, { id: id, fecha: fechaActual, titulo: titulo, contenido: contenido }]));
+        const storedData = localStorage.getItem('dataEntradas');
+        setEntradas(JSON.parse(storedData));
         navigate("/");
     }
 
@@ -50,7 +53,6 @@ const NewEntrada = (props) => {
     const btnDeshabilitado = titulo == '' || contenido == ''
 
     return (
-        
         <div>
             <form>
                 <input hidden id={'hdnIdEntrada'} value={id} readOnly/>

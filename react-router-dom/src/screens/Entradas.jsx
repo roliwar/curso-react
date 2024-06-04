@@ -1,9 +1,9 @@
-import React from 'react'
+import { React, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 
-const entradas = JSON.parse(localStorage.getItem('dataEntradas'))
-
-const Entradas = () => {
+const Entradas = (props) => {
+    const { StateContext } = props
+    const { entradas, setEntradas } = useContext(StateContext);
     const {id} = useParams()
     const entrada = entradas.find(entrada => entrada.id ==  id);
 
