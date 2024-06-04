@@ -1,0 +1,273 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  /*text-align: center;*/
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dcf0ef;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card-header {
+  /*background-color: #333;*/
+  color: #7d6a4c;
+  padding: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card-text {
+  color: #555;
+  margin: 0px;
+}
+
+.card-footer {
+  /*background-color: #f8f9fa;*/
+  padding: 0px 10px;
+  text-align: right;
+  font-size: 0.9em;
+  color: #333;
+}
+
+a.logo-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+a.title-font-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #7d6a4c;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+h3.title-font-regular{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a.title-font-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #7d6a4c;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.title-font-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  background-color: #30635c;
+  padding: 10px 20px;
+}
+
+.menu-items {
+  display: flex;
+  padding-left: 20px;
+}
+
+.menu-items a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-items a:hover {
+  background-color: #194a36;
+  border-radius: 4px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-items a {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #44918b;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #31716c;
+}
+
+.button-link:active {
+  background-color: rgb(43, 104, 99)
+}
+
+.button-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px 44918b(0, 123, 255, 0.5);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #194a36;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #44918b;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*****************/
+
+
+form {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: 'Inter', Arial, sans-serif;
+  resize: vertical;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled, button:hover:disabled {
+  opacity: 0.5;
+  background-color: #ccc;
+  color: #575757;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.fecha-entrada{
+  font-size: .7em;
+  color: #a3acbd;
+  margin-top: 0px;
+}
+
+.container-entrada{
+  padding: 20px;
+}
+
+.entrada {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.entrada-titulo{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #7d6a4c;
+  font-size: 2em;
+  text-decoration: none;
+}
