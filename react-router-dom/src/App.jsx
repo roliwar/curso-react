@@ -52,6 +52,8 @@ function App() {
     localStorage.setItem('dataEntradas', JSON.stringify(entradas));
   }, [entradas]);
 
+  
+
   return (
     <>
       <StateContext.Provider value={{ entradas, setEntradas }}>

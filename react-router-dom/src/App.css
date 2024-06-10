@@ -32,6 +32,7 @@ body {
   /*background-color: #333;*/
   color: #7d6a4c;
   padding: 10px;
+  position: relative;
 }
 
 .card-body {
@@ -270,4 +271,18 @@ button:disabled, button:hover:disabled {
   color: #7d6a4c;
   font-size: 2em;
   text-decoration: none;
+}
+
+.boton-eliminar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: rgb(183, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  color: rgb(255, 0, 0);
 }
